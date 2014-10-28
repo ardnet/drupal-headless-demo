@@ -8,9 +8,9 @@
   	    templateUrl: 'pages/home.html',
   	    controller: 'HomepageImages'
   	  })
-  	  .when('/about', {
-  	  	templateUrl: 'pages/about-us.html',
-  	    controller: 'AboutUsCtrl'
+  	  .when('/recipes', {
+  	  	templateUrl: 'pages/recipe.html',
+  	    controller: 'RecipesCtrl'
   	  })
   	  .when('/contact', {
   	  	templateUrl: 'pages/contact-us.html',
@@ -30,7 +30,7 @@
         });
   }]);
 
-  app.controller('AboutUsCtrl', ['$scope', '$http', function($scope, $http) {
+  app.controller('RecipesCtrl', ['$scope', '$http', function($scope, $http) {
   	var that = this;
   	that.recipes = [];
 
